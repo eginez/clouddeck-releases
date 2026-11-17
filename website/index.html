@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CloudDeck: every service on every cloud, in one window</title>
+  <meta name="description" content="CloudDeck is a fast, native desktop app that puts every service on every cloud you connect in one searchable window.">
+  <link rel="canonical" href="https://clouddeck.dev/">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CloudDeck">
+  <meta property="og:title" content="CloudDeck: every service on every cloud, in one window">
+  <meta property="og:description" content="A fast, native view of every service on every cloud you run, in one window.">
+  <meta property="og:url" content="https://clouddeck.dev/">
+  <meta property="og:image" content="https://clouddeck.dev/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CloudDeck: every service on every cloud, in one window">
+  <meta name="twitter:description" content="A fast, native view of every service on every cloud you run, in one window.">
+  <meta name="twitter:image" content="https://clouddeck.dev/assets/og-image.png">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="./"><img src="assets/icon.svg" alt="" width="28" height="28"> CloudDeck</a>
+    <nav>
+      <a href="#multicloud">Multicloud</a>
+      <a href="#install">Install</a>
+      <a href="https://github.com/eginez/clouddeck-releases">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow"><img class="logo aws" src="assets/aws-ec2.svg" alt="" width="28" height="28"><img class="logo gcp" src="assets/gcp-compute-engine.svg" alt="" width="28" height="28"> Multicloud, in one app</p>
+      <h1>Every service. Every cloud.<br>One window.</h1>
+      <p class="lead">CloudDeck is building toward every service on every cloud. Today: AWS and Google Cloud — more services and clouds on the way. A native app for macOS and Linux that signs in the way you already do.</p>
+      <p class="actions">
+        <a class="button" href="https://github.com/eginez/clouddeck-releases/releases/latest">Download for macOS</a>
+        <a class="button secondary" href="#install">Linux and Homebrew</a>
+      </p>
+      <p class="try">No account handy? <code>clouddeck --demo</code> opens a fake fleet.</p>
+
+      <div class="app" role="img" aria-label="CloudDeck showing All providers: one table that mixes Amazon Web Services and Google Cloud instances, with a provider filter in the sidebar">
+        <div class="app-bar">
+          <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="app-title">All providers</span>
+          <span class="app-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Search 38 instances across 2 clouds</span>
+        </div>
+        <div class="app-body">
+          <div class="app-side">
+            <div class="side-h">Provider</div>
+            <div class="side-row on"><span>All providers</span><b>38</b></div>
+            <div class="side-row"><span><img class="logo sm aws" src="assets/aws-ec2.svg" alt="" width="28" height="28">Amazon Web Services</span><b>24</b></div>
+            <div class="side-row"><span><img class="logo sm gcp" src="assets/gcp-compute-engine.svg" alt="" width="28" height="28">Google Cloud</span><b>14</b></div>
+            <div class="side-h">State</div>
+            <div class="side-row"><span><i class="dot run"></i>Running</span><b>31</b></div>
+            <div class="side-row"><span><i class="dot stop"></i>Stopped</span><b>7</b></div>
+          </div>
+          <div class="app-table">
+            <div class="tr th"><span>Name</span><span>State</span><span class="c-type">Type</span><span>Location</span><span class="c-acct">Account or project</span></div>
+            <div class="tr sel"><span><img class="logo sm aws" src="assets/aws-ec2.svg" alt="" width="28" height="28">web-prod-1</span><span><i class="dot run"></i>running</span><span class="c-type mono">t3.large</span><span class="mono">us-east-1</span><span class="c-acct">prod-readonly</span></div>
+            <div class="tr"><span><img class="logo sm gcp" src="assets/gcp-compute-engine.svg" alt="" width="28" height="28">checkout-api-2</span><span><i class="dot run"></i>running</span><span class="c-type mono">e2-standard-4</span><span class="mono">us-central1-a</span><span class="c-acct">checkout-prod</span></div>
+            <div class="tr"><span><img class="logo sm aws" src="assets/aws-ec2.svg" alt="" width="28" height="28">batch-worker-7</span><span><i class="dot stop"></i>stopped</span><span class="c-type mono">c6i.xlarge</span><span class="mono">eu-west-1</span><span class="c-acct">data-platform</span></div>
+            <div class="tr"><span><img class="logo sm gcp" src="assets/gcp-compute-engine.svg" alt="" width="28" height="28">ml-train-01</span><span><i class="dot run"></i>running</span><span class="c-type mono">a2-highgpu-1g</span><span class="mono">europe-west4-a</span><span class="c-acct">data-lake</span></div>
+            <div class="tr"><span><img class="logo sm aws" src="assets/aws-ec2.svg" alt="" width="28" height="28">bastion</span><span><i class="dot run"></i>running</span><span class="c-type mono">t3.micro</span><span class="mono">us-west-2</span><span class="c-acct">staging-admin</span></div>
+            <div class="tr"><span><img class="logo sm gcp" src="assets/gcp-compute-engine.svg" alt="" width="28" height="28">etl-nightly</span><span><i class="dot stop"></i>stopped</span><span class="c-type mono">n2-standard-8</span><span class="mono">us-east1-b</span><span class="c-acct">data-lake</span></div>
+            <div class="tr"><span><img class="logo sm aws" src="assets/aws-ec2.svg" alt="" width="28" height="28">api-gateway-3</span><span><i class="dot run"></i>running</span><span class="c-type mono">m6g.large</span><span class="mono">eu-central-1</span><span class="c-acct">prod-readonly</span></div>
+          </div>
+        </div>
+        <div class="app-status"><span>2 providers · 5 accounts and projects · 9 regions</span><span>38 instances</span></div>
+      </div>
+      <p class="caption">Illustration with sample data.</p>
+    </section>
+
+    <section class="ships" aria-label="Supported clouds">
+      <div class="ship"><img class="logo aws" src="assets/aws-ec2.svg" alt="" width="28" height="28"><div><b>Amazon Web Services</b><span>EC2 instances · profiles and IAM Identity Center</span></div></div>
+      <div class="ship"><img class="logo gcp" src="assets/gcp-compute-engine.svg" alt="" width="28" height="28"><div><b>Google Cloud</b><span>Compute Engine VMs · Application Default Credentials</span></div></div>
+      <div class="ship more"><span class="tile plus" aria-hidden="true">+</span><div><b>Add your own cloud</b><span>Write a provider plugin: declare sign-in, regions and fields, and CloudDeck draws the rest. <a href="https://github.com/eginez/clouddeck-releases/blob/main/docs/extensions.md">Provider API</a></span></div></div>
+    </section>
+
+    <section id="multicloud" class="why">
+      <h2 class="section-title">Stop switching consoles</h2>
+      <p class="section-lead">The AWS console shows one account and one region at a time. The Google Cloud console shows one project. CloudDeck shows all of them at once, in the same columns.</p>
+      <div class="grid2">
+        <article class="card">
+          <h3>One table for every cloud</h3>
+          <p>Choose All providers and every instance from every connected account and project lands in one list, with name, state, type, location and owner side by side. Each row shows which cloud it came from.</p>
+        </article>
+        <article class="card">
+          <h3>One search for every cloud</h3>
+          <p>The same query works everywhere. Narrow to a cloud with <code>provider:gcp</code>, then keep going: <code>provider:aws state:running type:t3.*</code>. Counts per provider update as you type.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features">
+      <article class="feature">
+        <div class="copy">
+          <p class="kicker">Search</p>
+          <h2>Find any machine in a few keystrokes</h2>
+          <p>Type words to match any field, or filter by field: <code>state:running</code>, <code>type:t3.*</code>, <code>-state:stopped</code>, <code>tag:Team=payments</code>. Autocomplete suggests values with live counts, and results update as you type.</p>
+        </div>
+        <picture class="shot">
+          <img src="assets/23-query-autocomplete-values.png" alt="CloudDeck search bar suggesting state values with counts" width="1600" height="950" loading="lazy">
+        </picture>
+      </article>
+
+      <article class="feature">
+        <div class="copy">
+          <p class="kicker">Keyboard</p>
+          <h2>Every action, one shortcut away</h2>
+          <p>Press <kbd>⌘⇧P</kbd> (<kbd>Ctrl+Shift+P</kbd> on Linux) and type what you want: switch profile or region, refresh, show only running instances, copy an instance's ID or IP, open it in its cloud console, retry a failed region.</p>
+          <p>Each command shows its shortcut, so the palette teaches you the keys as you go.</p>
+          <ul class="keys">
+            <li><kbd>⌘P</kbd> Switch profile</li>
+            <li><kbd>⌘F</kbd> Search</li>
+            <li><kbd>⌘C</kbd> Copy instance ID</li>
+            <li><kbd>⌘O</kbd> Open in console</li>
+          </ul>
+        </div>
+        <picture class="shot">
+          <img src="assets/command-palette.png" alt="CloudDeck command palette listing commands such as Switch Profile, Refresh and Copy ID, each with its keyboard shortcut" width="980" height="640" loading="lazy">
+        </picture>
+      </article>
+    </section>
+
+    <section id="install" class="install">
+      <h2 class="section-title">Install</h2>
+      <div class="grid3">
+        <div class="card">
+          <h3>macOS (Apple silicon)</h3>
+          <pre><code>brew install --cask eginez/clouddeck/clouddeck</code></pre>
+          <p class="note">Or get the disk image from <a href="https://github.com/eginez/clouddeck-releases/releases/latest">Releases</a>. The app is not notarized yet: the first time, right-click CloudDeck and choose Open. The cask does this for you.</p>
+        </div>
+        <div class="card">
+          <h3>Linux (x86_64)</h3>
+          <pre><code>brew install eginez/clouddeck/clouddeck</code></pre>
+          <p class="note">Or download the tarball from <a href="https://github.com/eginez/clouddeck-releases/releases">Releases</a>, extract it and run <code>./clouddeck</code>.</p>
+        </div>
+        <div class="card">
+          <h3>What you need</h3>
+          <ul class="needs">
+            <li><b>AWS:</b> a profile in <code>~/.aws/config</code> and <code>ec2:DescribeInstances</code>.</li>
+            <li><b>Google Cloud:</b> run <code>gcloud auth application-default login</code> once.</li>
+            <li><b>Neither yet:</b> <code>clouddeck --demo</code>.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="closing">More clouds and services coming.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="https://github.com/eginez/clouddeck-releases">GitHub</a>
+      <a href="https://github.com/eginez/clouddeck-releases/tree/main/docs/release-notes">Release notes</a>
+      <a href="https://github.com/eginez/clouddeck-releases/blob/main/docs/troubleshooting.md">Troubleshooting</a>
+      <a href="https://github.com/eginez/clouddeck-releases/blob/main/LICENSE.md">License</a>
+      <a href="https://github.com/eginez/clouddeck-releases/issues/new?template=commercial-license.yml">Commercial license</a>
+    </nav>
+    <p>Source available under <a href="https://github.com/eginez/clouddeck-releases/blob/main/LICENSE.md">PolyForm Small Business 1.0.0</a>. AWS, Amazon EC2, Google Cloud and Compute Engine are trademarks of their owners; CloudDeck is not affiliated with either. Service icons from the AWS Architecture Icons and the Google Cloud icon library.</p>
+  </footer>
+</body>
+</html>

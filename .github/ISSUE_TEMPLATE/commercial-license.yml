@@ -1,0 +1,37 @@
+name: Commercial license request
+description: Request a commercial license for CloudDeck (needed for companies over the PolyForm Small Business limits)
+title: "Commercial license request: <company>"
+labels: ["commercial-license"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        CloudDeck is free for individuals and for companies with fewer than 100 people and under 1,000,000 USD in annual revenue. Larger companies need a commercial license. Fill in this form and we will reply by email.
+  - type: input
+    id: company
+    attributes:
+      label: Company
+      description: Legal name of the company that will use CloudDeck
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact email
+      description: Where we can reply
+    validations:
+      required: true
+  - type: input
+    id: seats
+    attributes:
+      label: Team size (seats)
+      description: Number of people who will use CloudDeck, including contractors
+    validations:
+      required: true
+  - type: textarea
+    id: usage
+    attributes:
+      label: How you use CloudDeck
+      description: Briefly describe where and how CloudDeck runs in your organization
+    validations:
+      required: true
