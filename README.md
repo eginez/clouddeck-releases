@@ -7,4 +7,3 @@ CloudDeck is a desktop app for browsing AWS EC2 fleets. This repository holds it
 - **Website**: the source of [clouddeck.dev](https://clouddeck.dev) lives in `website/`.
 - **Docs**: [extensions](docs/extensions.md), [troubleshooting](docs/troubleshooting.md), [release notes](docs/release-notes/).
 
-The app's source code is not public.
